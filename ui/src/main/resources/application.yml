@@ -1,0 +1,29 @@
+server:
+  port: 8088
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      access-token-uri: https://192.168.56.101:9443/oauth2/token
+      client-id: Oc2YJhc6uCXj8fQstfqtviMcIgga
+      client-secret: jmBQgiaj6kbN2zumot2wJwLC5Eca
+      user-authorization-uri: https://192.168.56.101:9443/oauth2/authorize
+#     pre-established-redirect-uri: 
+      grant-type: password
+    resource:
+      user-info-uri: https://192.168.56.101:9443/oauth2/userinfo?schema=openid
+      prefer-token-info: false
+
+zuul:
+  ignore-local-service: false
+   
+logging:
+  level:
+    org : DEBUG
+    com : DEBUG
+      
+
+  
+
